@@ -1,3 +1,28 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the header of the site/application.
 // -----------------------------------------------------------------------------
+
+.addressbar{
+    padding:10px 0;
+    border-bottom: 1px solid $gray-color;
+    .col-6{
+        display: flex;
+        align-items: center;
+    }
+    &__menu--right{
+        justify-content: flex-end;
+    }
+    &__menu{
+        list-style: none;
+        margin-bottom: 0;
+       display: flex;
+       justify-content: flex-end;
+       li::after{
+            content:'\\';
+            padding:0 8px;
+       }
+       li:last-child::after{
+           content: '';
+       }
+    }
+}

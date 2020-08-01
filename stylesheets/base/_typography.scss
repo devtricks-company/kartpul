@@ -1,7 +1,18 @@
 /**
  * Basic typography style for copy text
  */
-body {
-  color: $text-color;
-  font: normal 125% / 1.4 $text-font-stack;
+.addressbar{
+    &__offer{
+       @include typographyText($font-Roboto,14px,$font-regular,25px,$gray-color);
+       margin:0;
+
+    }
+    &__link{
+        @include typographyText($font-Roboto,14px,$font-regular,25px,$gray-color);
+       margin: 0;
+        &:hover{
+            @include typographyText($font-Roboto,14px,$font-regular,25px,$green-color);
+            text-decoration: none;
+        }
+    }
 }
